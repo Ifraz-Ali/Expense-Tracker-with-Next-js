@@ -13,7 +13,7 @@ type allDataType = {
 }
 const trackerContext = createContext<trackerContextType | null>(null);
 
-export default function trackerContextProvider({ children }: { children: ReactNode }) {
+export default function TrackerContextProvider({ children }: { children: ReactNode }) {
     const [allData, setAllData] = useState<allDataType[]>([]);
     const trackData = (data: allDataType[]) => {
         setAllData(data);
