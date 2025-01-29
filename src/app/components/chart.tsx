@@ -2,7 +2,7 @@ import * as React from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
 import { usetrackerContext } from '../context/trackerContext';
 
-function IncomeChart({ income }: any) {
+function IncomeChart() {
     const { allData } = usetrackerContext()!;
     const incomeArray = allData?.filter((data) => data.type === "income");
     console.log("income", incomeArray);
@@ -51,7 +51,7 @@ function IncomeChart({ income }: any) {
     );
 }
 
-function ExpenseChart({ expense }: any) {
+function ExpenseChart() {
     const { allData } = usetrackerContext()!;
     const expenseArray = allData?.filter((data) => data.type === "expense" );
     console.log("income", expenseArray);

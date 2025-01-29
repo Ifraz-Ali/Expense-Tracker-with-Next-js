@@ -18,14 +18,14 @@ const ExpenseTracker = () => {
     const [balance, setBalance] = useState<number>();
 
     useEffect(() => {
-        let inc = allData.reduce((total, item) => {
+        const inc = allData.reduce((total, item) => {
             if (item.type === "income") {
                 total += item.amount;
             }
             return total;
         }, 0);
         setIncome(inc);
-        let exp = allData.reduce((total, item) => {
+        const exp = allData.reduce((total, item) => {
             if (item.type === "expense") {
                 total += item.amount;
             }
@@ -46,8 +46,7 @@ const ExpenseTracker = () => {
                     <p className='text-green-500 text-2xl '>$ {income}</p>
                 </div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                    <IncomeChart
-                        income={income} />
+                    <IncomeChart />
                 </div>
             </div>
 
@@ -154,8 +153,7 @@ const ExpenseTracker = () => {
                     <p className='text-rose-500 text-2xl '>$ {expense}</p>
                 </div>
                 <div className='w-full flex flex-col items-center justify-center'>
-                    <ExpenseChart
-                        expense={expense} />
+                    <ExpenseChart />
                 </div>
             </div>
         </div >
