@@ -25,4 +25,4 @@ export default function TrackerContextProvider({ children }: { children: ReactNo
     );
 }
 
-export const usetrackerContext = () => useContext(trackerContext);
+export const UsetrackerContext = () => useContext(trackerContext);

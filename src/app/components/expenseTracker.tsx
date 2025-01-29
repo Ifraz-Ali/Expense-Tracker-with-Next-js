@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import { usetrackerContext } from '../context/trackerContext';
+import { UsetrackerContext } from '../context/trackerContext';
 import ExpenseTable from './expenseTable';
 import { IncomeChart, ExpenseChart } from './chart';
 
@@ -11,7 +11,7 @@ const ExpenseTracker = () => {
     const [amount, setAmount] = useState<number>();
     const [date, setDate] = useState("");
 
-    const { allData, trackData } = usetrackerContext()!;
+    const { allData, trackData } = UsetrackerContext()!;
 
     const [income, setIncome] = useState<number>();
     const [expense, setExpense] = useState<number>();
