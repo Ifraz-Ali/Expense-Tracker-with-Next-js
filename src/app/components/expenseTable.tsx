@@ -1,5 +1,5 @@
 import React from 'react'
-import { usetrackerContext } from '../context/trackerContext';
+import { UsetrackerContext } from '../context/trackerContext';
 
 type dataType = {
     type: string,
@@ -9,7 +9,7 @@ type dataType = {
     index: number
 };
 const ExpenseTable = ({ type, amount, category, date, index }: dataType) => {
-    const { allData, trackData } = usetrackerContext()!;
+    const { allData, trackData } = UsetrackerContext()!;
     const handleDelete = (i: number) => {
         const updatedData = [...allData.slice(0, i), ...allData.slice(i + 1)];
         trackData(updatedData);
