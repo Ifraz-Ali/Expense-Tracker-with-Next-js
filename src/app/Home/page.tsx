@@ -3,7 +3,7 @@ import ExpenseTracker from '../components/expenseTracker'
 
 const Page = () => {
   return (
-    <div>
+    <div className='bg-white'>
         <ExpenseTracker />
     </div>
   )

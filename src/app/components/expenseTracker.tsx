@@ -99,7 +99,7 @@ const ExpenseTracker = () => {
                         trackData([...allData, newItem]);
                         setBalance(Number(income) - Number(expense));
                     }
-                }} className='w-full'>
+                }} className='w-full text-gray-800'>
                     <div className='w-full flex flex-col items-center'>
                         <select name="type" id="type" className=' mt-2 border-2 rounded-lg w-10/12 h-10 p-2'
                             onChange={(e) => setType(e.target.value)}

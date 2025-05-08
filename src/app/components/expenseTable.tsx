@@ -15,7 +15,7 @@ const ExpenseTable = ({ type, amount, category, date, index }: dataType) => {
         trackData(updatedData);
     }
     return (
-        <tr className='border-y-2 h-12'>
+        <tr className='border-y-2 h-12 text-gray-600'>
             {type === "income" && <td className='text-green-500 text-2xl font-semibold'>+</td>
                 || type === "expense" && <td className='text-red-500 text-2xl font-semibold'>-</td>}
             <td>$ {amount}</td>
